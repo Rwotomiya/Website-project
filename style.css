@@ -6,7 +6,9 @@
     height: 500px;
     margin: 0;
 }
-
+h3{
+    font-size: 30px;
+}
 .navbar {
     padding: 20px;
     font-family: 'Times New Romans';
@@ -63,4 +65,19 @@
     height: auto; 
     border-radius: 8px;
 }
+h1{
+    font-size: 90px;
+}
+.salutation{
+    padding: 20px;
+    background-image: linear-gradient(to bottom right,white,rgb(32, 181, 215),rgb(255, 204, 0),rgb(49, 255, 2) );
+}
+body{
  
+}
+footer{
+    background-color: rgb(9, 58, 58);
+    padding: 15px;
+    color: white;
+    width: 100%;
+}
