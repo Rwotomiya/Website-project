@@ -1,5 +1,5 @@
 .header {
-    background-image: url('pics/background.jpg');
+    background-image: url('pics/bg.jpeg');
     background-repeat: no-repeat; 
     background-size: 100% 160%;
     color: rgb(0, 0, 0);
@@ -56,10 +56,13 @@ h3{
     
   }  
 .grid-item{
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    
     padding: 10px;
     border-radius: 10px;
 } 
+.grid-item:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
 .grid-image{
     max-width: 100%; 
     height: auto; 
@@ -67,17 +70,20 @@ h3{
 }
 h1{
     font-size: 90px;
+    color: white;
+    
 }
 .salutation{
     padding: 20px;
-    background-image: linear-gradient(to bottom right,white,rgb(32, 181, 215),rgb(255, 204, 0),rgb(49, 255, 2) );
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 4px;
+    background-image: linear-gradient(to bottom right,white,rgb(0, 0, 0),rgb(255, 204, 0),rgb(255, 0, 0),white );
 }
-body{
- 
-}
+
 footer{
-    background-color: rgb(9, 58, 58);
+    background-image: linear-gradient(to bottom right,white,rgb(0, 0, 0),rgb(255, 204, 0),rgb(255, 0, 0),white );
     padding: 15px;
-    color: white;
+    color: black;
     width: 100%;
 }
