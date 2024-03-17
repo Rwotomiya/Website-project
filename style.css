@@ -40,6 +40,7 @@ h3{
     color: #ff0000;
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     
 }
 .grid-container {
@@ -85,7 +86,7 @@ body {
 
 /* Footer Styles */
 .footer {
-    background-color: #01291cc5;
+    background-image: linear-gradient(to bottom right,white,rgb(0, 0, 0),rgb(255, 204, 0),rgb(255, 0, 0),white );
     color: #ffffff;
     padding: 20px 0;
     position: relative;
@@ -97,11 +98,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 5%;
 }
 
 .footer-section {
     flex-basis: 30%;
+    padding-left: 80px;
 }
 
 .footer-section h2 {
@@ -117,13 +119,16 @@ body {
     margin-bottom: 10px;
 }
 
-.footer-section ul li a {
+.footer-section ul a {
     color: #ffffff;
     text-decoration: none;
+    display: block;
 }
 
-.footer-section ul li a:hover {
-    color: #dddddd;
+.footer-section ul a:hover {
+    color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .footer-bottom {
@@ -141,3 +146,57 @@ body {
     color: #000000;
 }
 
+.text-input-contact-input-email {
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+}
+.text-input-contact-input{
+    border: none;
+    border-radius: 8px;
+}
+.submit-btn{
+    border: none;
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: bottom 20px;
+
+}
+.submit-btn::after{
+    background-color: white;
+    color: black;
+}
+.fa{
+    padding: 15px;
+    font-size: 10px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover{
+    opacity: 0.7;
+
+}
+.fa-facebook{
+    background: #3b5998;
+    color: white;
+}
+.fa-instagram{
+    background: #ca0505;
+    color: white;
+}
+.fa-twitter{
+    background: #55ACEE;
+    color: white;
+}
+.socials{
+    padding: 20px;
+}
+.socials a{
+   margin: 10px;
+}
