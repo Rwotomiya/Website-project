@@ -27,9 +27,9 @@ html {
 
 .navbar {
     padding: 20px;
-    font-family: 'Roboto';
+    font-family: 'arial';
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: right;
     font-size: 20px;
     
@@ -121,7 +121,7 @@ h3{
 
  /* General Styles */
 body {
-    font-family: Roboto, Times, serif;
+    font-family: arial, Times, serif;
     margin: 0;
     padding-top: 68px;
     color: var(--text-color);
@@ -205,7 +205,7 @@ body {
 .submit-btn{
     border: none;
     border-radius: 8px;
-    font-family: Roboto, Times, serif;
+    font-family: arial, Times, serif;
     color: var(--accent-color);
     background-color:var(--text-color);
     padding-left: 20px;
@@ -326,4 +326,95 @@ body {
 
 .element {
     background-color: var(--text-color);
+}
+
+.slider{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img {
+    width: 100%;
+    height: 500px;
+}
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: 480px;
+    display: flex;
+    justify-content: center;
+    
+}
+.manual-btn{
+    bottom: 20px solid var(--secondary-color);
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: var(--text-color);
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 480px;
+}
+.navigation-auto div{
+    border: 2px solid var(--secondary-color);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: var(--text-color);   
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: var(--text-color);   
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: var(--text-color);   
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: var(--text-color);   
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: var(--text-color);   
 }

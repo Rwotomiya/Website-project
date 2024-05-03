@@ -6,6 +6,7 @@ icon.onclick = function(){
     if(document.body.classList.contains("dark-mode")){
         icon.src ="pics/lightMode.png";
         logo.src ="inverted_image.jpg";
+        
     }else{
         icon.src = "pics/nightMode.webp";
         logo.src ="pics/UHHlogo.png";
@@ -23,12 +24,12 @@ form.addEventListener('submit', function(event) {
     }
 });
 
-// Function to change the title
-function changeTitle(newTitle) {
-    // Select the element by its ID
-    var titleElement = document.getElementById("UHH");
-    
-    // Change the content of the element
-    titleElement.textContent = newTitle;
-}
+var counter = 1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked=true;
+    counter++;
+    if(counter>5){
+        counter=1;
+    }
+},5000);
 

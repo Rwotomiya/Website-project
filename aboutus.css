@@ -8,9 +8,9 @@
 
 .navbar {
     padding: 20px;
-    font-family: 'Roboto';
+    font-family: 'arial';
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: right;
     font-size: 20px;
   
@@ -87,7 +87,10 @@
     margin: 0;
 }
 #logo{
-    border-radius: 8px;
+    border-radius: 15px;
+    padding-bottom: 5px;
+    padding: 5px;
+    margin: 5px;
 }
 h3{
     font-size: 30px;
@@ -109,13 +112,12 @@ html {
     justify-content: space-between;
 }
 .design{
-    background-image: url(pics/acoli\ solo.jpg);
+    background-image: url(pics/dancing.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 160%;
-    height: 500px;
+    height: 400px;
     margin: 0;
-    border-radius: 12px;
 }
 .divide{
     display: inline-grid;
@@ -341,7 +343,7 @@ h3{
 
  /* General Styles */
 body {
-    font-family: Roboto;
+    font-family: arial;
     margin: 0;
     padding-top: 50px;
     color: var(--text-color);
