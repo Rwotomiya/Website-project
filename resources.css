@@ -1,93 +1,294 @@
-body{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #0850a8;
-}
-.slider{
-    width: 800px;
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.slides{
-    width: 500%;
-    height: 500px;
-    display: flex;
-}
-
-.slides input{
-    display: none;
-}
-.slide{
-    width: 20%;
-    transition: 2s;
-}
-.slide img{
-    width: 800px;
-    height: 500px;
-}
-.navigation-manual{
-    position: absolute;
-    width: 800px;
-    margin-top: 480px;
-    display: flex;
-    justify-content: center;
+html {
+    scroll-behavior: smooth;
     
 }
-.manual-btn{
-    bottom: 20px solid #0850a8;
-    padding: 7px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: var(--secondary-color);
+    z-index: 9999;
+    top: 0;
 }
-.manual-btn:not(:last-child){
-    margin-right: 40px;
+#logo{
+    border-radius: 8px;
+    margin: 10px;
 }
-.manual-btn:hover{
-    background: #0850a8;
+
+.navbar {
+    padding: 20px;
+    font-family: 'arial';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: right;
+    font-size: 20px;
+   
+  
 }
-#radio1:checked ~ .first{
-    margin-left: 0;
+@media (max-width: 600px) {
+    .navbar {
+        text-align: center;
+    }
 }
-#radio2:checked ~ .first{
-    margin-left: -20%;
-}
-#radio3:checked ~ .first{
-    margin-left: -40%;
-}
-#radio4:checked ~ .first{
-    margin-left: -60%;
-}
-.navigation-auto{
-    position: absolute;
-    display: flex;
-    width: 800px;
-    justify-content: center;
-    margin-top: 480px;
-}
-.navigation-auto div{
-    border: 2px solid #0850a8;
+
+/* Navbar links */
+.navbar a { 
+    text-decoration: none;
+    color: var(--text-color);
     padding: 5px;
+}
+
+.navbar a:hover {
+    color: var(--gradprimary);
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px var(--text-color);
     border-radius: 10px;
-    transition: 1s;
+    
 }
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
+#icon{
+    width: 25px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0;
 }
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background: #0850a8;   
+
+
+:root {
+    --primary-color: #F6F4E8;
+    --secondary-color: #BACEC1;
+    --accent-color: #E59560;
+    --text-color: #1D3124;
 }
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #0850a8;   
+    
+.dark-mode{
+    --primary-color:#1D3124;
+    --secondary-color: #080d09;
+    --accent-color: #E59560;
+    --text-color:#F6F4E8;
 }
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #0850a8;   
+h1{
+    font-size: 70px;
+    color: var(--text-color);
+    
 }
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background: #0850a8;   
+h3{
+    font-size: 30px;  
+    align-items: right;  
+}
+body {
+    font-family: arial, Times, serif;
+    margin: 0;
+    padding-top: 68px;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.footer-section {
+    flex-basis: 30%;
+    padding-left: 80px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.logo-text{
+    color: var(--text-color);
+}
+
+.footer-section ul a {
+    color: var(--accent-color);
+    text-decoration: none;
+    display: block;
+    width: 150px;
+}
+
+.footer-section ul a:hover {
+    color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid var(--primary-color);
+}
+
+.footer-bottom a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: var(--text-color);
+}
+
+.text-input-contact-input-email {
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+}
+.text-input-contact-input{
+    border: none;
+    border-radius: 8px;
+}
+.submit-btn{
+    border: none;
+    border-radius: 8px;
+    font-family: arial, Times, serif;
+    color: var(--accent-color);
+    background-color:var(--text-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: bottom 20px;
+
+}
+.submit-btn::after{
+    background-color:var(--text-color);
+    color: var(--primary-color);
+}
+.fa{
+    padding: 15px;
+    font-size: 10px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover{
+    opacity: 0.7;
+
+}
+.fa-facebook{
+    background: #3b5998;
+    color: white;
+}
+.fa-instagram{
+    background: #ca0505;
+    color: white;
+}
+.fa-twitter{
+    background: #55ACEE;
+    color: white;
+}
+.socials{
+    padding: 0;
+}
+.socials a{
+   margin: 10px;
+}
+
+/*animations*/
+@keyframes fade-in {
+    from {
+        scale: .5; opacity: .2;
+    }
+    to {
+        scale: 1; opacity: 1;
+    }    
+}
+
+/* Style the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropdown-toggle {
+    color: var(--gradprimary);
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px var(--text-color);
+    z-index: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: var(--text-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: var(--secondary-color);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropdown-toggle {
+    background-color: var();
+}
+img{
+    padding: 8px;
+}
+.dance{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+}
+.dances{
+    box-shadow:0 4px 8px var(--text-color);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}
+.foods{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+}
+.food{
+    box-shadow:0 4px 8px var(--text-color);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}
+.culture{
+    box-shadow:0 4px 8px var(--text-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+.tools{
+    box-shadow:0 4px 8px var(--text-color);
+    border-radius: 10px;
+    padding: 10px;
 }

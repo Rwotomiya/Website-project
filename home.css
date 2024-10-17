@@ -96,12 +96,14 @@ html {
     animation-range-start: cover;
     animation-range-end: 500px;
     text-align: center;
+    
 }
 
 .grid-item:hover {
     box-shadow: 0 0 10px var(--text-color);
     transform: scale(1.1);
     transition: .4s ease-out;
+    background-color: var(--primary-color);
 }
 .grid-img{
     width: 350px; 
