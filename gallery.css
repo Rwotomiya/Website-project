@@ -122,20 +122,6 @@ body {
     color: var(--secondary-color);
 }
 
-.details .tags {
-    display: flex;
-    gap: .375em;
-    margin-bottom: .875em;
-    font-size: .85em;
-}
-
-.details .tags span {
-    padding: .35rem .65rem;
-    color: #fff;
-    border: 1.5px solid rgba(255 255 255 / 0.4);
-    border-radius: 4px;
-    border-radius: 50px;
-}
 
 .details .desc {
     color: #fff;
